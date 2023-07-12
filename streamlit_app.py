@@ -55,9 +55,6 @@ def smiles_visual(dataset):
   mols = [Chem.MolFromSmiles(i) for i in dataset.loc[:, 'SMILES']]
   return (Draw.MolsToGridImage(mols, legends = ['Pred.inhibition = '+str(np.array(i).round(2))+'%' for i in data]))
 
-dataset = pd.read_csv(r'/content/descriptors (14).csv')
-
-dataset
 
 st.title("QSAR prediction of inhibition of peroxidation oxidation")
 
