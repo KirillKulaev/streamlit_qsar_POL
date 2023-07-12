@@ -21,11 +21,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 
-from sklearn import linear_model
-from sklearn.utils import shuffle
-from sklearn.model_selection import cross_validate
-from sklearn.model_selection import LeaveOneOut
-
 
 from rdkit import DataStructs
 from rdkit.Chem import AllChem as Chem
@@ -34,7 +29,6 @@ from rdkit.Chem import Descriptors
 from rdkit.ML.Descriptors import MoleculeDescriptors
 from rdkit.Chem import Fragments
 from rdkit.Chem import rdMolDescriptors
-import seaborn as sns
 
 #Выбрать похожие на берберин молекулы
 def is_inEdges(dataset):
