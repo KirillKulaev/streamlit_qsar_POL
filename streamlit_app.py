@@ -20,8 +20,6 @@ from sklearn import metrics
 from sklearn.metrics import accuracy_score
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
-import mordred
-from mordred import Calculator, descriptors
 
 from sklearn import linear_model
 from sklearn.utils import shuffle
