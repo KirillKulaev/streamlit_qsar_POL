@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/13xbRVMHzExlJ45FqeZvGc1XhrK-2Rt-5
 """
 
-!pip install -q streamlit
 import streamlit as st
 
 !pip install rdkit
