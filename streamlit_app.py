@@ -9,7 +9,7 @@ Original file is located at
 
 import streamlit as st
 
-
+import rdkit
 from rdkit.Chem import AllChem as Chem
 from rdkit.Chem import Draw
 from rdkit import DataStructs
