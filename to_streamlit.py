@@ -9,7 +9,6 @@ Original file is located at
 
 import streamlit as st
 
-!pip install rdkit
 
 from rdkit.Chem import AllChem as Chem
 from rdkit.Chem import Draw
