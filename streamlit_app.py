@@ -31,7 +31,7 @@ def is_inEdges(dataset):
   numbers = []
   index = []
 
-  fpgen = Chem.GetRDKitFPGenerator()
+  fpgen = rdkit.Chem.rdFingerprintGenerator.GetRDKitFPGenerator()
   fps = [fpgen.GetFingerprint(x) for x in mols]
   for i in range(len(fps)):
     tan = (DataStructs.TanimotoSimilarity(fpgen.GetFingerprint(Chem.MolFromSmiles('COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC')), fps[i]))
