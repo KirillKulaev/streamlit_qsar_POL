@@ -54,7 +54,7 @@ def smiles_visual(dataset):
   mols = [Chem.MolFromSmiles(i) for i in dataset.loc[:, 'SMILES']]
   return (Draw.MolsToGridImage(mols, legends = ['Pred.inhibition = '+str(np.array(i).round(2))+'%' for i in data]))
 
-st.title("QSAR prediction of inhibition of peroxidation for berberine deriatives")
+st.title("QSAR prediction of inhibition of lipid peroxidation for berberine deriatives")
 
 st.markdown('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below. Make sure you load berberine derivatives because this model can only predict LPO inhibition for this class of chemical compounds.')
 
