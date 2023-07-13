@@ -18,6 +18,8 @@ from rdkit.Chem import Draw
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
 
+st.text('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below')
+
 #Выбрать похожие на берберин молекулы
 def is_inEdges(dataset):
   mols = []
