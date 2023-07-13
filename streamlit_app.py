@@ -47,7 +47,7 @@ def is_inEdges(dataset):
   return s_dataset
 
 def get_predict(dataset):
-  return 39.391830*dataset.loc[:, 'Mor28p:(MORDRED)'] + 26.446247*dataset.loc[:, 'Mor13se:(MORDRED)'] + 53.579802*dataset.loc[:, 'Mor26m:(MORDRED)'] - 0.330472*dataset.loc[:, 'PEOE_VSA7:(MORDRED)'] - 1.235251*dataset.loc[:, 'SsOH:(MORDRED)'] + 3.458921*dataset.loc[:, 'PEOE_VSA5:(MORDRED)'] - 336.598009*dataset.loc[:, 'GATS1d:(MORDRED)'] + 64.284856*dataset.loc[:, 'AATSC4dv:(MORDRED)'] + 350.2463171947596
+  return 1.891617*dataset.loc[:, 'Mor28p:(MORDRED)'] + 2.404685*dataset.loc[:, 'Mor13se:(MORDRED)'] + 23.561944*dataset.loc[:, 'Mor26m:(MORDRED)'] - 0.142447*dataset.loc[:, 'PEOE_VSA7:(MORDRED)'] - 1.456278*dataset.loc[:, 'SsOH:(MORDRED)'] + 2.465088*dataset.loc[:, 'PEOE_VSA5:(MORDRED)'] - 109.374892*dataset.loc[:, 'GATS1d:(MORDRED)'] + 42.131713*dataset.loc[:, 'AATSC4dv:(MORDRED)'] + 172.62352
 
 def smiles_visual(dataset):
   data = get_predict(dataset)
