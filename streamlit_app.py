@@ -15,7 +15,7 @@ import pandas as pd
 import rdkit
 from rdkit.Chem import AllChem as Chem
 from rdkit.Chem import Draw
-from rdkit.Chem.rdFingerprintGenerator import GetRDKitFPGenerator()
+from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
 
 #Выбрать похожие на берберин молекулы
