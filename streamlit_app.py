@@ -56,7 +56,7 @@ def smiles_visual(dataset):
 
 st.title("QSAR prediction of inhibition of lipid peroxidation for berberine deriatives")
 
-st.markdown('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below. Make sure you load berberine derivatives because this model can predict POL inhibition only for this class of chemical compounds.')
+st.markdown('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab https://ochem.eu/descriptorscalculator/show.do. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below. Make sure you load berberine derivatives because this model can predict POL inhibition only for this class of chemical compounds.')
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
