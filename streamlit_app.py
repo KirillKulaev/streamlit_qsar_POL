@@ -18,8 +18,6 @@ from rdkit.Chem import Draw
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
 
-st.text('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below')
-
 #Выбрать похожие на берберин молекулы
 def is_inEdges(dataset):
   mols = []
@@ -57,6 +55,8 @@ def smiles_visual(dataset):
   return (Draw.MolsToGridImage(mols, legends = ['Pred.inhibition = '+str(np.array(i).round(2))+'%' for i in data]))
 
 st.title("QSAR prediction of inhibition of peroxidation oxidation")
+
+st.markdown('To use the model go to the OCHEM website. Enter the Calculate Descriptors tab. Choose 2d and 3d MORDRED descriptors and then upload the resulting file below')
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
