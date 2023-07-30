@@ -1,4 +1,5 @@
-В данном репозитории представлен небольшой backend для streamlit приложения https://appqsarpol-jgevwl67ne66jdzud8puea.streamlit.app/
+В данном репозитории представлен небольшой backend для streamlit приложения 
+https://appqsarpol-jgevwl67ne66jdzud8puea.streamlit.app/
 Приложение может быть использовано для виртуального скрининга бербериноподобных молекул с целью расчета антиоксидантной активности.
 Для расчета используются 2d и 3d дескрипторы MORDRED которые удобнее будет посчитать с использованием базы данных OCHEM https://ochem.eu//descriptorscalculator/show.do?render-mode=full ввиду встроенной 3d оптимизации corina
 Дополнительная информация о разработке модели представлена на постере
