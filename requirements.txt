@@ -1,4 +1,3 @@
-pip==23.2.1
 numpy==1.19.2
 streamlit==0.72.0
 Pillow==8.0.1
